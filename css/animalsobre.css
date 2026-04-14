@@ -1,0 +1,48 @@
+.animal__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container__imagem{
+    margin: 10em 0 10em 10em;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.container__imagem--animal{
+    width: 260px;
+    height: 425px;
+    transition: all 0.3s;
+    
+}
+.container__imagem img:hover{
+    transition: 0.3s;
+    transform: scale(1.2);
+}
+.container__texto {
+    padding-left: 7em;
+    margin-top: 4em;
+}
+.container__texto h1{
+    font-size: 50px;
+}
+.container__texto p{
+    max-width: 620px;
+}
+.container__texto li{
+    line-height: 3em;
+}
+.container__texto .texto__subtitulo{
+    font-size: larger;
+    padding-right: 50px;
+}
+.container__botao{
+    background-color: #ffc400;
+    padding: 1em;
+    margin-top: 1em;
+    width: 130px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+.container__botao:hover{
+    background-color: #bd9100;
+}

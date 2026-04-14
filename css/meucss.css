@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito sans' sans-serif;
+}
+:root{
+    --clr: #222327;
+}
+html{
+    background: black;
+}
+.logo img{
+    color: white;
+    width: 100px;
+    height: 100px;
+    margin-top: 0.5em;
+    margin-left: 3em;
+}
+header{
+    height: 7.2em;
+    background: var(--clr);
+    display: flex;
+    justify-content: space-between;
+}
+.botoes{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 0.7em;
+}
+.navegacao{
+    position: relative;
+    width: 470px;
+    height: 70px;
+    margin-top: 2em;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+.navegacao ul{
+    display: flex;
+    width: 420px;
+    padding: 0;
+    margin: 0;
+}
+.navegacao ul .navegacao__lista{
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+.navegacao ul .navegacao__lista a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+.navegacao ul .navegacao__lista a .navegacao__lista--icone{
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    color: white;
+}
+.navegacao ul .navegacao__lista:hover a .navegacao__lista--icone{
+    transform: translateY(-32px);
+}
+.navegacao ul .navegacao__lista a .navegacao__lista--texto{
+    position: absolute;
+    color: white;
+    font-weight: 400;
+    font-size: 0.90em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+.navegacao ul .navegacao__lista:hover a .navegacao__lista--texto{
+    opacity: 1;
+    transform: translateY(10px);
+}
+/* .navegacao__selecao{
+    position: absolute;
+    top: -50%;
+    width: 70px;
+    height: 70px;
+    background: #8529fd;
+    border-radius: 50%;
+    border: 6px solid var(--clr);
+    transition: 0.5s;
+} */
+.navegacao__selecao::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-right-radius: 15px;
+    box-shadow: 1px -10px 0 0 var(--clr);
+
+}
+.navegacao__selecao::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-left-radius: 15px;
+    box-shadow: -1px -10px 0 0 var(--clr);
+
+}
+.navegacao ul .navegacao__lista:nth-child(1).active ~ .navegacao__selecao{
+    transform: translateX(calc(70px * 0));
+}
+.navegacao ul .navegacao__lista:nth-child(2).active ~ .navegacao__selecao{
+    transform: translateX(calc(70px * 1));
+}
+.navegacao ul .navegacao__lista:nth-child(3).active ~ .navegacao__selecao{
+    transform: translateX(calc(70px * 2));
+}
+.navegacao ul .navegacao__lista:nth-child(4).active ~ .navegacao__selecao{
+    transform: translateX(calc(70px * 3));
+}
+.navegacao ul .navegacao__lista:nth-child(5).active ~ .navegacao__selecao{
+    transform: translateX(calc(70px * 4));
+}
+.navegacao ul .navegacao__lista:nth-child(6).active ~ .navegacao__selecao{
+    transform: translateX(calc(70px * 5));
+}
+
+@media only screen and (max-width: 618px) {
+    header{
+        display: block;
+        margin: auto;
+        height: 15em;
+    }
+    .logo{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .navegacao{
+        background: white;
+    }
+    .navegacao ul .navegacao__lista a .navegacao__lista--icone{
+        color: black;
+    }
+    .navegacao ul .navegacao__lista a .navegacao__lista--texto{
+        color: black;
+    } 
+    .botoes{
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+@media only screen and (min-width: 470px) {
+    .navegacao{
+        border-radius: 12px;
+    }
+    
+}

@@ -1,0 +1,336 @@
+:root{
+    --background: #ffff;
+    --backgroundboxhome: #ffff;
+    --backgroundtestemunha: #ffff;
+    --backgroundservisesobre: #ffff;
+    --backgroundinputform: #f4f4f4;
+    --textinputform: #666666;
+    --shadowinputform: rgba(108, 108, 108, 0.5);
+    --sobrebotaodoar: #4d0076;
+    --sobredevsfuncao: #4d0076;
+    --titulo: #212529;
+    --texto: #66666f;
+    --backgroundbs: #ffffff;
+    --boxshadowcolor1: #e6e6e6;
+    --boxshadowcolor2: #ffffff;
+    --backgroundform: #ffff; 
+    --simboloformlogin: #666666;
+    --perfillinks: #555555;
+}
+
+.dark_mode:root{
+    --background: #2d2d2d;
+    --backgroundboxhome: #424242;
+    --backgroundtestemunha: #424242;
+    --backgroundservisesobre: #212121;
+    --backgroundinputform: #676767;
+    --textinputform: #ffffff;
+    --shadowinputform: rgba(255, 255, 255, 0.5);
+    --sobrebotaodoar: #ffffff;
+    --sobredevsfuncao: #8e48b3;
+    --texto: #cecece;
+    --titulo: #ffff;
+    --backgroundbs: #424242;
+    --boxshadowcolor1: #383838;
+    --boxshadowcolor2: #383838;
+    --backgroundform: #424242;
+    --simboloformlogin: #fff;
+    --perfillinks: #fff;
+}
+
+
+.darkmode__botao{
+    appearance: none;
+    width: 45px;
+    height: 21px;
+    background-color: #e7e7e7;
+    border-radius: 50px;
+    position: absolute;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 15px 0 0 10px;
+}
+.darkmode__botao::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    left: 3px;
+    top: 3px;
+    transition: 0.3s;
+}
+.darkmode__botao::after{
+    position: absolute;
+    color: #34384b;
+    font-size: 5px;
+    left: 6px;
+    top: 9px;
+    transition: 0.3s;
+}
+.darkmode__botao:checked{
+    background-color: black;
+}
+.darkmode__botao:checked::before{
+    background: #ffffff;
+    left: 26px;
+}
+.darkmode__botao:checked::after{
+    color: black;
+    left: 37.5px;
+}
+.botao__darkmode{
+    display: flex;
+}
+#darkmode__texto{
+    font-size: 14px;
+    padding: 12px 0 0 65px;
+    color: var(--titulo);
+}
+
+/* dark mode mobile */
+.darkmode__botao--mobile{
+    appearance: none;
+    width: 55px;
+    height: 31px;
+    background-color: #b9b9b9;
+    border-radius: 50px;
+    position: absolute;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 15px 6em 0 10px;
+}
+.darkmode__botao--mobile::before{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    left: 3px;
+    top: 3px;
+    transition: 0.3s;
+}
+.darkmode__botao--mobile::after{
+    position: absolute;
+    color: #34384b;
+    font-size: 5px;
+    left: 6px;
+    top: 9px;
+    transition: 0.3s;
+}
+.darkmode__botao--mobile:checked{
+    background-color: #353535;
+}
+.darkmode__botao--mobile:checked::before{
+    background: #ffffff;
+    left: 26px;
+}
+.darkmode__botao--mobile:checked::after{
+    color: #353535;
+    left: 37.5px;
+}
+.botao__darkmode--mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#darkmode__texto--mobile{
+    font-size: 17px;
+    padding: 12px 0 0 105px;
+    color: #fff;
+}
+/* dark mode mobile fim */
+
+/* items do tema escuro */
+
+body{
+    background-color: var(--background);
+    transition: 0.3s;
+}
+.alime-portfolio-area{
+    background-color: var(--background);
+    transition: 0.3s;
+}
+.portfolio-menu button{
+    color: var(--titulo);
+    transition: 0.3s;
+}
+h1{
+    transition: 0.3s;
+    color: var(--titulo);
+}
+h3{
+    color: var(--titulo);
+    transition: 0.3s;
+}
+h4{
+    color: var(--titulo);
+    transition: 0.3s;
+}
+p{
+    color: var(--texto);
+    transition: 0.3s;
+}
+span{
+    color: var(--texto);
+    transition: 0.3s;
+}
+#text{
+    color: var(--texto);
+    transition: 0.3s;
+}
+.testmonial_area{
+    background-color: var(--background);
+    transition: 0.3s;
+}
+.box__animal{
+    transition: 0.3s;
+    background: var(--backgroundbs);
+    box-shadow:  10px 10px 47px var(--boxshadowcolor1),
+                -10px -10px 47px var(--boxshadowcolor2);
+}
+.adapt_area .adapt_about .single_adapt{
+    transition: 0.3s;
+    background: var(--backgroundboxhome);
+    box-shadow:  25px 25px 54px var(--boxshadowcolor1),
+                -25px -25px 54px var(--boxshadowcolor2);
+}
+.single_testmonial{
+    transition: 0.3s;
+    background-color: var(--backgroundtestemunha);
+}
+.service-item{
+    transition: 0.3s;
+    background-color: var(--backgroundservisesobre);
+}
+.foto__sobre--2{
+    transition: 0.3s;
+    background: var(--background);
+}
+.team-text{
+    transition: 0.3s;
+    background-color: var(--backgroundservisesobre);
+}
+.sobre__devs--funcao{
+    transition: 0.3s;
+    color: var(--sobredevsfuncao);
+}
+.team-item .team-social .btn{
+    transition: 0.3s;
+    background: var(--backgroundservisesobre);
+}
+.team-item .team-social .btn:hover{
+    transition: 0.3s;
+    color: var(--backgroundservisesobre);
+}
+.btn__sobre--adotar:hover{
+    color: var(--titulo);
+}
+.btn__sobre--doar{
+    color: var(--sobrebotaodoar);
+}
+.container-contact1{
+    background: var(--backgroundform);
+    transition: 0.3s;
+}
+.dark_mode #imagem__form--admin{
+    filter: invert(100%);
+    transition: 0.3s;
+}
+.dark_mode .contact1usuario img{
+    filter: invert(100%);
+    transition: 0.3s;
+}
+.contact1-form-title{
+    color: var(--titulo);
+}
+.input1{
+    background-color: var(--backgroundinputform); 
+    transition: 0.3s;
+}
+.input1::placeholder{
+    color: var(--textinputform);
+    transition: 0.3s;
+}
+.shadow-input1{
+    color: var(--shadowinputform);
+    transition: 0.3s;
+}
+.wrap-login100{
+    background-color: var(--backgroundform);
+    transition: 0.3s;
+}
+.input100{
+    background-color: var(--backgroundinputform); 
+    transition: 0.3s;
+}
+.input100::placeholder{
+    color: var(--textinputform);
+    transition: 0.3s;
+}
+.symbol-input100{
+    color: var(--simboloformlogin);
+}
+.focus-input100{
+    color: var(--shadowinputform);
+}
+.login100-form-title{
+    color: var(--titulo);
+}
+
+.action .perfil__menu {
+    background: var(--backgroundboxhome);
+    transition: 0.3s;
+}
+.action .perfil__menu::before{
+    background: var(--backgroundboxhome);
+    transition: 0.3s;
+}
+.action .perfil__menu ul li .perfil__links{
+    color: var(--perfillinks);
+}
+.dark_mode .action .perfil__menu ul li i{
+    filter: invert(100%);
+    opacity: 0.5;
+}
+.dark_mode .action .perfil__menu ul li:hover i{
+    opacity: 1;
+}
+/* icone select */
+
+.input__idade select{
+    color: var(--textinputform);
+    transition: 0.3s;
+    appearance: none;
+    background: url(../views/img/chevron-baixo.png) 96.5% / 6.5% no-repeat var(--backgroundinputform);
+    
+}
+.input__sexo select{
+    color: var(--textinputform);
+    transition: 0.3s;
+    appearance: none;
+
+    background: url(../views/img/chevron-baixo.png) 98.5% / 3.3% no-repeat var(--backgroundinputform);
+    
+}
+.input__tamanho select{
+    color: var(--textinputform);
+    transition: 0.3s;
+    appearance: none;
+
+    background: url(../views/img/chevron-baixo.png) 98.5% / 3.3% no-repeat var(--backgroundinputform);
+    
+}
+.input__especie select{
+    color: var(--textinputform);
+    transition: 0.3s;
+    appearance: none;
+
+    background: url(../views/img/chevron-baixo.png) 98.5% / 3.3% no-repeat var(--backgroundinputform);
+    
+}
+
+/* icone select fim */
+

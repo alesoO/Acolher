@@ -1,0 +1,205 @@
+  @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
+
+  .bnt__hero {
+    width: 160px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    height: 55px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    opacity: 0;
+    transform: translateY(150px);
+    transition: 0.2s;
+  }
+
+  .bnt__hero:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    color: white;
+  }
+
+  .bnt__hero:focus {
+    outline: none;
+  }
+
+  .bnt__hero.bnt__anim {
+    background-image: linear-gradient(to right,
+        #0ba360,
+        #3cba92,
+        #30dd8a,
+        #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+  }
+
+  .cards {
+    display: flex;
+    padding: 32px;
+    justify-content: center;
+  }
+
+  .cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    margin-left: 32px;
+  }
+
+
+  .cards .card span {
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
+  }
+
+  .card__produto--3050 {
+    margin: 1em;
+    position: relative;
+    width: 350px;
+    height: 560px;
+    background: #191919;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .card__produto--3050::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #ffc400;
+    transform: skewY(345deg);
+    transition: 0.5s;
+  }
+
+  .card__produto--3050:hover::before {
+    top: -70%;
+    transform: skewY(390deg);
+  }
+
+  .card__produto--3050::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 6em;
+    color: rgba(0, 0, 0, 0.1);
+  }
+
+  .card__produto--3050 .card__produto--imagem {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+  }
+
+  .card__produto--3050 .card__produto--content {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+  }
+
+  .card__produto--3050 .card__produto--content h3 {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .card__produto--3050 .card__produto--content .preço {
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-top: 3em;
+  }
+
+  .card__produto--3050:hover .card__produto--content .bnt__hero {
+    top: 0;
+    opacity: 1;
+    transform: translateY(70px);
+  }
+
+  .card__placas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 4em;
+  }
+
+  .card__produto {
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-bottom: 1em;
+  }
+
+  .produto {
+    height: 240px;
+    width: auto;
+  }
+
+  @media screen and (max-width: 1150px) {
+    .hero__dlss {
+      display: block;
+    }
+    .hero__dlss--video {
+      margin: 0;
+    }
+    .card__produto--3050:hover .card__produto--content .bnt__hero{
+      transform: translateY(20px);
+    }
+    .card__produto--3050{
+      width: 300px;
+      height: 510px;
+    }
+    .hero__dlss--text {
+      max-width: none;
+    }
+  }
+
+  @media screen and (max-width: 720px) {
+    .cards {
+      flex-direction: column;
+    }
+
+    .cards .card {
+      margin-left: 0;
+      margin-bottom: 32px;
+    }
+
+    .cards .card:last-child {
+      margin-bottom: 0;
+    }
+
+    .cards .card button {
+      font-size: 70%;
+    }
+  }
