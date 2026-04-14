@@ -90,7 +90,7 @@
                             <img class="img-fluid-team" src="views/img/David.jpg" alt="">
                         </div>
                         <div class="team-text  text-center p-4">
-                            <h5>David Gabriel</h5>
+                            <h5>David</h5>
                             <p class="sobre__devs--funcao">Front End</p>
                             <div class="team-social text-center">
                                 <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
@@ -106,7 +106,7 @@
                             <img class="img-fluid-team" src="views/img/Alexandre.jpg" alt="">
                         </div>
                         <div class="team-text  text-center p-4">
-                            <h5>Alexandre Oliveira</h5>
+                            <h5>Alexandre</h5>
                             <p class="sobre__devs--funcao">Back End</p>
                             <div class="team-social text-center">
                                 <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
@@ -122,7 +122,7 @@
                             <img class="img-fluid-team" src="views/img/Cassio.jpg" alt="">
                         </div>
                         <div class="team-text  text-center p-4">
-                            <h5>Cassio Gutenberg</h5>
+                            <h5>Cassio</h5>
                             <p class="sobre__devs--funcao">Banco de dados</p>
                             <div class="team-social text-center">
                                 <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
